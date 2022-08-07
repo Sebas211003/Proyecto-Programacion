@@ -1,6 +1,34 @@
 #include<stdio.h>
 #include <stdlib.h>
+
+int tidyparking();
+
 main (){
+
+	//Declaro la variable ParkingM1, se encargara de mostrar la disponibilidad de los lugares de parking
+	int parkingM1[16][19];
+	
+	//Esta funcion ordenara la forma inicial del array, esta pensada para ejectutarse solo la primera vez
+	tidyparking(parkingM1); 
+
+	//Inicio el programa
+	int flag = 0;
+	while(flag == 0){
+		printf(",------.   ,---.  ,------. ,--. ,--.,--.,--.  ,--. ,----.    "); 
+		printf("|  .--. ' /  O  | |  .--. '|  .'   /|  ||  ,'.|  |'  .-./    ");
+		printf("|  '--' ||  .-.  ||  '--'.'|  .   ' |  ||  |' '  ||  | .---. ");
+		printf("|  | --' |  | |  ||  ||  | |  ||   ||  ||  | `   |'  '--'  | ");
+		printf("`--'     `--' `--'`--' '--'`--' '--'`--'`--'  `--' `------'  ");
+
+		printf("Bienvenido!");
+
+
+
+		
+
+	}
+
+	/*
 	int n,m;
 	
 	int i=0,j=0;	
@@ -129,6 +157,17 @@ main (){
 	}
 }
 }
-	//Hola
-	//chao
-//mm
+*/
+} 
+
+int tidyparking(int tidyarray[16][19]){
+	for( int i = 0; i < 16; i++ ) {
+            for( int j = 0; j < 19; j++ ) {
+                if( i==0 || i==16-1 || j==0 || j==19-1 )
+                    tidyarray[i][j] = '';
+                else
+                    tidyarray[i][j] = 0;
+            }       
+        }
+	return tidyarray; 
+}

@@ -5,7 +5,7 @@
 int op;
 
 void tidyparking();
-void impresion ();
+void print();
 
 //Declaro la variable ParkingM1, se encargara de mostrar la disponibilidad de los lugares de parking
 char parkingM1[16][19];
@@ -25,10 +25,10 @@ int main (){
 		printf("`--'     `--' `--'`--' '--'`--' '--'`--'`--'  `--' `------'  \n");
 
 		printf("Bienvenido!\nEnseguida encontrara un mapa de la zona.\n\n");
-		impresion(); 
+		print(); 
 		
 
-		scanf("%d", &op);
+		scanf("%d", &flag);
 	}
 
 } 
@@ -74,8 +74,7 @@ void tidyparking(){ //Esta funcion ordena el vector inicialmente, para que muest
         }
 	
 }
-
-void impresion(){ //Esta funcion se encarga de imprimir el mapa 
+void print(){ //Esta funcion se encarga de imprimir el mapa 
 	
 	for (int i=0;i<16;i++){
 		for (int k=0;k<19;k++){

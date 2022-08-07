@@ -92,6 +92,6 @@ void print(){ //Esta funcion se encarga de imprimir el mapa
 }
 void inandout(){//Es la ecargada de gestionar la salida y entrada de los carros
 
-
+        //HOLA
 
 }

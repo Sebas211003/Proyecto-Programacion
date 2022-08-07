@@ -61,7 +61,7 @@ void tidyparking(){ //Esta funcion ordena el vector inicialmente, para que muest
             }       
         }
 
-	for( int i = 1; i < 4; i++ ) {
+	for( int i = 1; i < 5; i++ ) {
             for( int j = 11; j < 18; j++ ) {
                     parkingM1[i][j] = '0';
             }       
